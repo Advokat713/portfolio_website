@@ -10,58 +10,156 @@
     <link rel="shortcut icon" href="../static/images/icons/favicon_1.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
     <title>Dmitry Nazarov</title>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: #2f2e33;">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="../static/images/icons/favicon-32x32.png" width="30" height="30"
-                    class="d-inline-block align-top" alt="main_logo" loading="lazy">
-                Advokate`
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav mr-auto mb-2">
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Информация</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Портфолио</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Контакты</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: #2f2e33;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../static/images/icons/favicon-32x32.png" width="32" height="32"
+                        class="d-inline-block align-top" alt="main_logo" loading="lazy">
+                    Advokate`
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto mb-2">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Информация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Портфолио</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact-data" class="nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <main>
         <div class="container">
             <div class="row my-5 gy-5">
                 <div class="col-md-6 col-sm-12">
                     <h4>Hello world</h4>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
-                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                        <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                        class="bi bi-card-image" viewBox="0 0 16 16">
+                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                        <path
+                            d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
                     </svg>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem, placeat optio, culpa voluptates totam facilis non nesciunt, et ea quos quod sit praesentium rerum! Dolorum exercitationem laudantium placeat sunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem, placeat optio, culpa
+                        voluptates totam facilis non nesciunt, et ea quos quod sit praesentium rerum! Dolorum
+                        exercitationem laudantium placeat sunt.</p>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <h4>Hello bootstrap</h4>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
-                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                        <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                        class="bi bi-card-image" viewBox="0 0 16 16">
+                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                        <path
+                            d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
                     </svg>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem, placeat optio, culpa voluptates totam facilis non nesciunt, et ea quos quod sit praesentium rerum! Dolorum exercitationem laudantium placeat sunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem, placeat optio, culpa
+                        voluptates totam facilis non nesciunt, et ea quos quod sit praesentium rerum! Dolorum
+                        exercitationem laudantium placeat sunt.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h4>Hello bootstrap</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                        class="bi bi-card-image" viewBox="0 0 16 16">
+                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                        <path
+                            d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem, placeat optio, culpa
+                        voluptates totam facilis non nesciunt, et ea quos quod sit praesentium rerum! Dolorum
+                        exercitationem laudantium placeat sunt.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h4>Hello bootstrap</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                        class="bi bi-card-image" viewBox="0 0 16 16">
+                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                        <path
+                            d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem, placeat optio, culpa
+                        voluptates totam facilis non nesciunt, et ea quos quod sit praesentium rerum! Dolorum
+                        exercitationem laudantium placeat sunt.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h4>Hello bootstrap</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                        class="bi bi-card-image" viewBox="0 0 16 16">
+                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                        <path
+                            d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem, placeat optio, culpa
+                        voluptates totam facilis non nesciunt, et ea quos quod sit praesentium rerum! Dolorum
+                        exercitationem laudantium placeat sunt.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h4>Hello bootstrap</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                        class="bi bi-card-image" viewBox="0 0 16 16">
+                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                        <path
+                            d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem, placeat optio, culpa
+                        voluptates totam facilis non nesciunt, et ea quos quod sit praesentium rerum! Dolorum
+                        exercitationem laudantium placeat sunt.</p>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="text-center text-white contact-footer" id="contact-data">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <section class="mb-4">
+                <a class="btn btn-link m-1" href="https://t.me/dm_naz" role="button"
+                    data-mdb-ripple-color="dark">
+                    <img src="../static/images/icons/telegram_icon.svg"
+                        alt="contact-telegram">
+                </a>
+                <a class="btn btn-link m-1" href="https://vk.com/dm_naz" role="button"
+                    data-mdb-ripple-color="dark">
+                    <img src="../static/images/icons/vk_icon.svg"
+                        alt="contact-vk">
+                </a>
+                <!-- Сделать ссылку -->
+                <a class="btn btn-link m-1" href="#" role="button"
+                    data-mdb-ripple-color="dark">
+                    <img src="../static/images/icons/whatsapp_icon.svg"
+                        alt="contact-whats-app">
+                </a>
+                <a class="btn btn-link m-1" href="https://steamcommunity.com/id/DmitriyAdvokat" role="button"
+                data-mdb-ripple-color="dark">
+                <img src="../static/images/icons/steam_icon.svg" 
+                    alt="contact-steam">
+            </a>
+                <a class="btn btn-link m-1" href="https://github.com/Advokat1" role="button"
+                    data-mdb-ripple-color="dark">
+                    <img src="../static/images/icons/github_icon.svg" 
+                        alt="github_icon">
+                </a>
+                <!-- Сделать ссылку -->
+                <a class="btn btn-link m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <img src="../static/images/icons/mail_icon.svg" 
+                        alt="contact-mail">
+                </a>
+            </section>
+        </div>
+    </footer>
 
     <body>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
