@@ -1,15 +1,11 @@
 # крупные файлы
 node_modules
-resources
 
 # тестовая вёрстка
 test.html
 
 # слайдер
 slider_photos
-
-# файлы стилей
-css
 
 # файлы json
 package-lock.json
