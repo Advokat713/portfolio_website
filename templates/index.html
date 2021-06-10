@@ -8,28 +8,27 @@
     <meta name="description"
         content="Сайт портфолио, содержащий информацию о Назарове Дмитрие, молодом разработчике и 3d-моделлере">
     <link rel="shortcut icon" href="../static/images/icons/favicon_1.ico" type="image/x-icon">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../static/css/style.css">
     <title>Dmitry Nazarov</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navigationMenu">
     <header>
-        <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: #2f2e33;">
-            <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #2f2e33;"
+            id="navigationMenu">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#top">
                     <img src="../static/images/icons/favicon-32x32.png" width="32" height="32"
                         class="d-inline-block align-top" alt="main_logo" loading="lazy">
                     Advokate`
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                    aria-controls="navbarContent" aria-expanded="false">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav mr-auto mb-2">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="#top" class="nav-link">Главная</a>
                         </li>
@@ -49,8 +48,9 @@
                 </div>
             </div>
         </nav>
+        <div id="top"></div>
     </header>
-    <div id="top"></div>
+
     <a href="#top" class="up-btn">
         <img src="../static/images/icons/up-btn.svg" alt="go-top-btn">
     </a>
@@ -66,7 +66,7 @@
                     <button type="button" data-bs-target="#carouselAboutMe" data-bs-slide-to="2"
                         aria-label="3d-modeling"></button>
                 </div>
-                <div class="carousel-inner bg-info">
+                <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="5000">
                         <img src="../static/images/icons/up-btn.svg" class="d-block w-100" alt="TextAboutMe">
                         <div class="carousel-caption d-none d-md-block">
@@ -102,7 +102,7 @@
             </div>
         </section>
         <!-- Раздел "Обо мне" -->
-        <section id="aboutMe">
+        <section id="aboutMe" class="bg-gray">
             <div class="container">
                 <div class="row my-3 gy-3">
                     <div class="col-md-6 col-sm-12">
@@ -113,9 +113,7 @@
                             <path
                                 d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
                         </svg>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem, placeat optio, culpa
-                            voluptates totam facilis non nesciunt, et ea quos quod sit praesentium rerum! Dolorum
-                            exercitationem laudantium placeat sunt.</p>
+                        <a href="../static/images/slider_photos/slide_3.jpg" class="btn btn-info" download="image">download</a>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <h4>Hello bootstrap</h4>
@@ -182,11 +180,11 @@
         </section>
         <!-- Раздел "Навыки" -->
         <section id="skills">
-            <div style="height: 1000px; background-color: blanchedalmond;"></div>
+            <div style="height: 1000px;"></div>
         </section>
         <!-- Раздел "Портфолио" -->
-        <section id="portfolio">
-            <div style="height: 1000px; background-color: rgb(156, 134, 100);"></div>
+        <section id="portfolio" class="bg-gray">
+            <div style="height: 1000px;"></div>
         </section>
     </main>
     <footer class="contact-footer text-center text-white" id="contactData">
@@ -219,11 +217,7 @@
     </footer>
 
     <body>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-            integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-            integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
-            crossorigin="anonymous"></script> -->
-            <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../resources/script.js"></script>
+
 </html>

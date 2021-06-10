@@ -1,50 +1,63 @@
-.carousel-item{
-    height: 100vh;
+.carousel-item {
+  height: 100vh;
 }
 
-.carousel-item img{
-    height: 100vh;
-    background-size: 100% 100%;
-    background-size: cover;
+.carousel-item img {
+  height: 100vh;
+  background-size: 100% 100%;
+  background-size: cover;
 }
 
-.contact-footer{
-    background-color: #2F2E33;
+.contact-footer {
+  background-color: #2f2e33;
 }
 
-.footer-created{
-    background-color: #212024;
+.footer-created {
+  background-color: #212024;
 }
 
 /* Плавный скрол страницы до блока */
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 /* Кнопка для скрола вверх страницы */
-.up-btn{
-    position: fixed;
-    bottom: 16px;
-    right: 32px;
-    z-index: 1;
+.up-btn {
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  z-index: 1;
 }
 
 /* Добавление блока в шапку для решения вопроса навигации */
-header:before, header:after {
-    display: table;
-    content: " ";
+header:before,
+header:after {
+  display: table;
+  content: " ";
 }
 
 /* Внешний вид кнопок футера */
-.btn-circle:hover{
-    background-color: #212024;
+.btn-circle:hover {
+  background-color: #212024;
 }
 
 .btn-circle {
-    width: 48px;
-    height: 48px;
-    border-radius: 24px;
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body {
+  position: relative;
+}
+
+.bg-gray {
+  background-color: #d5d6d2;
+}
+
+.nav-target:hover {
+  cursor: pointer;
 }
