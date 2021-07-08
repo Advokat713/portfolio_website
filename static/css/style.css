@@ -16,11 +16,6 @@
   background-color: #212024;
 }
 
-/* Плавный скрол страницы до блока */
-/* html {
-    scroll-behavior: smooth;
-} */
-
 /* Кнопка для скрола вверх страницы */
 .up-btn {
   position: fixed;
@@ -58,6 +53,15 @@ body {
   background-color: #d5d6d2;
 }
 
+.bg-blue {
+  background-color: #3a5199;
+}
+
 .nav-target:hover {
   cursor: pointer;
 }
+
+.top-border {
+  border-top: 2px solid #3a5199;
+}
+

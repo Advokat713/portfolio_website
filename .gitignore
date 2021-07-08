@@ -1,9 +1,6 @@
 # крупные файлы
 node_modules
 
-# тестовая вёрстка
-test.html
-
 # слайдер
 slider_photos
 
