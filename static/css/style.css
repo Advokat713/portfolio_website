@@ -2,6 +2,12 @@
   height: 100vh;
 }
 
+.carousel {
+  background-image: url(../images/slider_photos/banner-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .carousel-item img {
   height: 100vh;
   background-size: 100% 100%;
@@ -65,3 +71,6 @@ body {
   border-top: 2px solid #3a5199;
 }
 
+.card-border {
+  border: 2px solid #3a5199
+}
