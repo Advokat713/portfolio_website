@@ -14,7 +14,7 @@
     <title>Dmitry Nazarov</title>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navigationMenu" data-bs-offset="0" tabindex="0">
+<body tabindex="0">
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #2f2e33"
             id="navigationMenu">
@@ -57,7 +57,7 @@
             <img src="../static/images/icons/up-btn.svg" alt="go-top-btn" />
         </a>
         <!-- Раздел "Главная" -->
-        <section data-bs-spy="scroll" data-bs-target="#navigationMenu" data-bs-offset="0">
+        <section>
             <div id="carouselAboutMe" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselAboutMe" data-bs-slide-to="0" class="active"
@@ -112,13 +112,15 @@
             </div>
         </section>
         <!-- Раздел "О себе" -->
-        <section id="aboutMe" class="bg-gray" data-bs-spy="scroll" data-bs-target="#navigationMenu" data-bs-offset="0">
+        <section id="aboutMe" class="bg-gray">
             <div class="container p-3">
                 <div class="row justify-content-center">
                     <div class="col-6">
-                        <hr>
-                        <h3 class="text-center">&laquo;А я, так просто, Назаров Дмитрий&raquo;</h3>
-                        <hr>
+                        <hr />
+                        <h3 class="text-center">
+                            &laquo;А я, так просто, Назаров Дмитрий&raquo;
+                        </h3>
+                        <hr />
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -143,13 +145,12 @@
                     <div class="col-3">
                         <div class="card text-center">
                             <img src="../static/images/cards_photos/vk_group.png" class="card-img-top"
-                                alt="vk_group_logo">
+                                alt="vk_group_logo" />
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    MovieNerds
-                                </h5>
+                                <h5 class="card-title">MovieNerds</h5>
                                 <p class="card-text">
-                                    Сообщество, в котором я делюсь новостями кино, сериалов и анимации
+                                    Сообщество, в котором я делюсь новостями кино, сериалов и
+                                    анимации
                                 </p>
                                 <a href="https://vk.com/movie_nerds" target="_blank" class="btn btn-primary">
                                     Присоединиться
@@ -160,16 +161,14 @@
                     <div class="col-3">
                         <div class="card text-center">
                             <img src="../static/images/cards_photos/telegram.png" class="card-img-top"
-                                alt="telegram_logo">
+                                alt="telegram_logo" />
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    Advokate`s works
-                                </h5>
+                                <h5 class="card-title">Advokate`s works</h5>
                                 <p class="card-text">
-                                    Канал, где я показываю свой прогресс в изучении 3д-моделирования
+                                    Канал, где я показываю свой прогресс в изучении
+                                    3д-моделирования
                                 </p>
-                                <a href="https://t.me/advokate_works" target="_blank"
-                                    class="btn btn-primary">
+                                <a href="https://t.me/advokate_works" target="_blank" class="btn btn-primary">
                                     Присоединиться
                                 </a>
                             </div>
@@ -179,7 +178,7 @@
             </div>
         </section>
         <!-- Раздел "Навыки" -->
-        <section id="skills" data-bs-spy="scroll" data-bs-target="#navigationMenu" data-bs-offset="0">
+        <section id="skills">
             <div class="container p-3">
                 <div class="row justify-content-center">
                     <h3 class="text-center">Мои навыки</h3>
@@ -207,36 +206,35 @@
                             <div class="col-9">
                                 <div class="progress bg-gray" style="height: 20px">
                                     <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
-                                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
-                                        65%
-                                    </div>
+                                        style="width: 65%"></div>
                                 </div>
                             </div>
                             <div class="col-3">JavaScript</div>
                             <div class="col-9">
                                 <div class="progress bg-gray" style="height: 20px">
                                     <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
-                                        aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
-                                        55%
-                                    </div>
+                                        style="width: 55%"></div>
                                 </div>
                             </div>
                             <div class="col-3">CSharp</div>
                             <div class="col-9">
                                 <div class="progress bg-gray" style="height: 20px">
                                     <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
-                                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                        20%
-                                    </div>
+                                        style="width: 20%"></div>
+                                </div>
+                            </div>
+                            <div class="col-3">1С</div>
+                            <div class="col-9">
+                                <div class="progress bg-gray" style="height: 20px">
+                                    <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
+                                        style="width: 20%"></div>
                                 </div>
                             </div>
                             <div class="col-3">SQL</div>
                             <div class="col-9">
                                 <div class="progress bg-gray" style="height: 20px">
                                     <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
-                                        aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">
-                                        15%
-                                    </div>
+                                        style="width: 15%"></div>
                                 </div>
                             </div>
                         </div>
@@ -254,36 +252,28 @@
                             <div class="col-9">
                                 <div class="progress bg-gray" style="height: 20px">
                                     <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
-                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
-                                        55%
-                                    </div>
+                                        style="width: 55%"></div>
                                 </div>
                             </div>
                             <div class="col-3">CSS3</div>
                             <div class="col-9">
                                 <div class="progress bg-gray" style="height: 20px">
                                     <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
-                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                        40%
-                                    </div>
+                                        style="width: 40%"></div>
                                 </div>
                             </div>
                             <div class="col-3">Bootstrap</div>
                             <div class="col-9">
                                 <div class="progress bg-gray" style="height: 20px">
                                     <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
-                                        35%
-                                    </div>
+                                        style="width: 35%"></div>
                                 </div>
                             </div>
                             <div class="col-3">Figma</div>
                             <div class="col-9">
                                 <div class="progress bg-gray" style="height: 20px">
-                                    <div class="progress-bar w-50 progress-bar-striped bg-blue" role="progressbar"
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                        50%
-                                    </div>
+                                    <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
+                                        style="width: 20%"></div>
                                 </div>
                             </div>
                         </div>
@@ -300,28 +290,22 @@
                             <div class="col-3">3ds Max</div>
                             <div class="col-9">
                                 <div class="progress bg-gray" style="height: 20px">
-                                    <div class="progress-bar w-50 progress-bar-striped bg-blue" role="progressbar"
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                        50%
-                                    </div>
+                                    <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
+                                        style="width: 35%"></div>
                                 </div>
                             </div>
                             <div class="col-3">Corona</div>
                             <div class="col-9">
                                 <div class="progress bg-gray" style="height: 20px">
-                                    <div class="progress-bar progress-bar-striped bg-blue w-25" role="progressbar"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                        25%
-                                    </div>
+                                    <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
+                                        style="width: 35%"></div>
                                 </div>
                             </div>
                             <div class="col-3">Photoshop</div>
                             <div class="col-9">
                                 <div class="progress bg-gray" style="height: 20px">
-                                    <div class="progress-bar progress-bar-striped bg-blue w-25" role="progressbar"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                        25%
-                                    </div>
+                                    <div class="progress-bar progress-bar-striped bg-blue" role="progressbar"
+                                        style="width: 35%"></div>
                                 </div>
                             </div>
                         </div>
@@ -440,18 +424,17 @@
             </div>
         </section>
         <!-- Раздел "Портфолио" -->
-        <section id="portfolio" class="bg-gray" data-bs-spy="scroll" data-bs-target="#navigationMenu"
-            data-bs-offset="0">
+        <section id="portfolio" class="bg-gray">
             <div class="container p-3">
                 <div class="row justify-content-center">
                     <h3 class="text-center">Портфолио</h3>
                     <div class="col-8">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Corrupti, dolor animi rem eos maxime distinctio sit odio
-                            provident repudiandae nam voluptates impedit incidunt
-                            praesentium aliquid magni expedita. Impedit, exercitationem
-                            adipisci?
+                        <p class="text-center">
+                            Я стремлюсь стать хорошим специалистом в сфере информационных технологий, поэтому постоянно
+                            развиваю свои компетенции. На данный момент я прохожу обучение по магистерской программе
+                            "Компьютерная лингвистика и искусственный интеллект" в Московском Политехе. В свободное
+                            время я выполняю работу над некоторыми проектами по программированию. Иногда я занимаюсь
+                            созданием 3д моделлей различных объектов.
                         </p>
                     </div>
                 </div>
@@ -463,7 +446,7 @@
                                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                                     aria-selected="true">
-                                    Мои достижения
+                                    Личные достижения
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
@@ -486,21 +469,54 @@
                                 aria-labelledby="pills-home-tab">
                                 <div class="card mb-3 card-border">
                                     <div class="row g-0">
-                                        <div class="col-4 border-end border-2">
+                                        <div class="col-5 border-end border-2">
                                             <img src="../static/images/cards_photos/project.png"
                                                 class="img-fluid rounded-start" alt="info" />
                                         </div>
-                                        <div class="col-8">
+                                        <div class="col-7">
                                             <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
+                                                <h5 class="card-title">Сертификат "Оператор ЭВМ"</h5>
                                                 <p class="card-text">
-                                                    This is a wider card with supporting text below as a
-                                                    natural lead-in to additional content. This content
-                                                    is a little bit longer.
+                                                    Завершил обучение во Владимирском
+                                                    промышленно-коммерческом лицее. Углубленно изучал
+                                                    физику, математику и информатику. Успешно завершил
+                                                    изучение дисциплин связанных с программированием и
+                                                    работой с прикладным программным обеспечением.
+                                                    Получил навыки системного администрирования. Изучил
+                                                    базовые понятия в сфере 3д моделирования и обработки
+                                                    изображений с помощью редакторов.
                                                 </p>
                                                 <p class="card-text">
                                                     <small class="text-muted">
-                                                        Last updated 3 mins ago
+                                                        Сертификат получен
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 card-border">
+                                    <div class="row g-0">
+                                        <div class="col-5 border-end border-2">
+                                            <img src="../static/images/cards_photos/project.png"
+                                                class="img-fluid rounded-start" alt="info" />
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Диплом Бакалавра</h5>
+                                                <p class="card-text">
+                                                    Завершил обучение в Московском политехническом
+                                                    университете по направлению прикладная информатика.
+                                                    Согласно программе профессиональной подготовки
+                                                    обладаю навыками осуществления всех этапов
+                                                    жизненного цикла программных продуктов. Подробно
+                                                    знакомился с шагом проектирования (моделирования)
+                                                    систем. Изучал программирование на 1С, Python, С#, а
+                                                    также получил навыки веб-разработки.
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">
+                                                        Диплом получен 06.07.2021
                                                     </small>
                                                 </p>
                                             </div>
@@ -512,21 +528,142 @@
                                 aria-labelledby="pills-profile-tab">
                                 <div class="card mb-3 card-border">
                                     <div class="row g-0">
-                                        <div class="col-4 border-end border-2">
+                                        <div class="col-5 border-end border-2">
+                                            <img src="../static/images/cards_photos/vk_ms_bot.png"
+                                                class="img-fluid rounded-start" alt="info" />
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Бот Вконтакте</h5>
+                                                <p class="card-text">
+                                                    Проект заключается в создании чат бота для
+                                                    сообщества MovieNerds. Бот предназначен для
+                                                    автоматического взаимодействия с участниками группы
+                                                    или обычными пользователями социальной сети. Главной
+                                                    задачей является подбор кино/сериалов/аниме по
+                                                    заданным параметрам. Для получения информации о
+                                                    картинах бот взаимодействует с API сайта КиноПоиск.
+                                                </p>
+                                                <p class="card-text">
+                                                    <small>
+                                                        <a href="https://github.com/Advokat1/vk_ms_bot" target="_blank"
+                                                            class="link-secondary">Репозиторий проекта на GitHub</a>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 card-border">
+                                    <div class="row g-0">
+                                        <div class="col-5 border-end border-2">
+                                            <img src="../static/images/cards_photos/vk_goals.png"
+                                                class="img-fluid rounded-start" alt="info" />
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Мини-приложение Вконтакте</h5>
+                                                <p class="card-text">
+                                                    Проект для личного пользования. Веб-приложение для
+                                                    Vk Mini Apps, которое позволит создавать список
+                                                    целей или задач. Для достижения поставленного
+                                                    результата предполагается система уведомлений и
+                                                    напоминаний. Завершение конкретной задачи, по
+                                                    желанию пользователя, формирует пост, которым можно
+                                                    поделиться.
+                                                </p>
+                                                <p class="card-text">
+                                                    <small>
+                                                        <a href="https://github.com/Advokat1/vk_mini_goals"
+                                                            target="_blank" class="link-secondary">Репозиторий проекта
+                                                            на GitHub</a>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 card-border">
+                                    <div class="row g-0">
+                                        <div class="col-5 border-end border-2">
+                                            <img src="../static/images/cards_photos/programming_challenge.png"
+                                                class="img-fluid rounded-start" alt="info" />
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Алгоритмы и задачи</h5>
+                                                <p class="card-text">
+                                                    Проект для развития навыков программирования и
+                                                    вёрстки. Репозиторий состоит из файлов-исходников,
+                                                    содержащих код реализации задач, а также таблицы
+                                                    отчётности. Вопросы программирования выбираю с
+                                                    <a href="https://leetcode.com/problemset/all/" target="_blank"
+                                                        class="link-secondary">Leetcode</a>, а затем решаю их на языке
+                                                    Python. Задачи вёрстки
+                                                    состоят в формировании элементов/сайтов в
+                                                    соответствии с условиями
+                                                    <a href="https://github.com/P1xt/speedrun-challenge" target="_blank"
+                                                        class="link-secondary">Speedrun Challange</a>
+                                                </p>
+                                                <p class="card-text">
+                                                    <small>
+                                                        <a href="https://github.com/Advokat1/algorithms_challenge"
+                                                            target="_blank" class="link-secondary">Репозиторий проекта
+                                                            на GitHub</a>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 card-border">
+                                    <div class="row g-0">
+                                        <div class="col-5 border-end border-2">
+                                            <img src="../static/images/cards_photos/4photos_1word.png"
+                                                class="img-fluid rounded-start" alt="info" />
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Приложение под андроид</h5>
+                                                <p class="card-text">
+                                                    Проект предназначен для работы с библиотеками языка
+                                                    Python, позволяющих выполнять разработку мобильных
+                                                    приложений. В качестве задачи стоит создание андроид
+                                                    игры формата "4 фото - 1 слово". Приложение
+                                                    разрабатывается по спроектированному ранее
+                                                    <a href="" class="link-secondary" target="_blank">концепту</a>
+                                                </p>
+                                                <p class="card-text">
+                                                    <small>
+                                                        <a href="https://github.com/Advokat1/android_4photos_1word"
+                                                            target="_blank" class="link-secondary">Репозиторий проекта
+                                                            на GitHub</a>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 card-border">
+                                    <div class="row g-0">
+                                        <div class="col-5 border-end border-2">
                                             <img src="../static/images/cards_photos/project.png"
                                                 class="img-fluid rounded-start" alt="info" />
                                         </div>
-                                        <div class="col-8">
+                                        <div class="col-7">
                                             <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
+                                                <h5 class="card-title">Игра платформер</h5>
                                                 <p class="card-text">
-                                                    This is a wider card with supporting text below as a
-                                                    natural lead-in to additional content. This content
-                                                    is a little bit longer.
+                                                    Проект предназначенный для улучшнения навыков программирования на
+                                                    Python. Создаю простой 2д платформер с использованием библиотеки
+                                                    PyGame. Игра спроектирована в сеттинге постапокалипсиса и
+                                                    предполагает харакерный 8-битный дизайн окружения.
                                                 </p>
                                                 <p class="card-text">
-                                                    <small class="text-muted">
-                                                        Last updated 3 mins ago
+                                                    <small>
+                                                        <a href="https://github.com/Advokat1/2d_platformer"
+                                                            target="_blank" class="link-secondary">Репозиторий проекта
+                                                            на GitHub</a>
                                                     </small>
                                                 </p>
                                             </div>
@@ -559,6 +696,52 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card mb-3 card-border">
+                                    <div class="row g-0">
+                                        <div class="col-4 border-end border-2">
+                                            <img src="../static/images/cards_photos/project.png"
+                                                class="img-fluid rounded-start" alt="info" />
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">
+                                                    This is a wider card with supporting text below as a
+                                                    natural lead-in to additional content. This content
+                                                    is a little bit longer.
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">
+                                                        Last updated 3 mins ago
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 card-border">
+                                    <div class="row g-0">
+                                        <div class="col-4 border-end border-2">
+                                            <img src="../static/images/cards_photos/project.png"
+                                                class="img-fluid rounded-start" alt="info" />
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">
+                                                    This is a wider card with supporting text below as a
+                                                    natural lead-in to additional content. This content
+                                                    is a little bit longer.
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">
+                                                        Last updated 3 mins ago
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -567,8 +750,7 @@
         </section>
     </main>
     <!-- Футер -->
-    <footer class="contact-footer text-center text-white" id="contactData" data-bs-spy="scroll"
-        data-bs-target="#navigationMenu" data-bs-offset="0">
+    <footer class="contact-footer text-center text-white" id="contactData">
         <div class="container p-4 pb-0">
             <section class="mb-4">
                 <!-- Telegram -->
