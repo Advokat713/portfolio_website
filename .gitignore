@@ -1,10 +1,5 @@
 # крупные файлы
 node_modules
 
-# слайдер/иконки/карточки
-slider_photos
-cards_photos
-icons
-
 # файлы json
 package-lock.json
