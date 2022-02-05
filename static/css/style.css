@@ -3,7 +3,7 @@
 }
 
 .carousel {
-  background-image: url(../images/slider_photos/banner-bg.jpg);
+  background-image: url(../images/slider_photos/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -69,8 +69,4 @@ body {
 
 .top-border {
   border-top: 2px solid #3a5199;
-}
-
-.card-border {
-  border: 2px solid #3a5199
 }
