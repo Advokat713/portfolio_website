@@ -16,7 +16,7 @@
 
 <body tabindex="0">
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #2f2e33"
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top scrollto" style="background-color: #2f2e33"
             id="navigationMenu">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#top">
@@ -37,7 +37,7 @@
                             <a href="#aboutMe" class="nav-link">О себе</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#skills" class="nav-link">Навыки</a>
+                            <a href="#skills" class="nav-link" id="Scroll">Навыки</a>
                         </li>
                         <li class="nav-item">
                             <a href="#portfolio" class="nav-link">Портфолио</a>
@@ -52,11 +52,15 @@
     </header>
     <main>
         <div id="top"></div>
+
         <!-- Кнопка быстрого скролла вверх страницы -->
+
         <a href="#top" class="up-btn">
             <img src="../static/images/icons/up-btn.svg" alt="go-top-btn" />
         </a>
+
         <!-- Раздел "Главная" -->
+
         <section>
             <div id="carouselAboutMe" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -68,7 +72,7 @@
                         aria-label="3d-modeling"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="7000">
+                    <div class="carousel-item active" data-bs-interval="5000">
                         <img src="../static/images/slider_photos/slide_1_web.png" class="d-block w-100" alt="Web" />
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Фронтенд</h3>
@@ -78,8 +82,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="7000">
-                        <img src="../static/images/slider_photos/slide_2_back.png" class="d-block w-100" alt="Programming" />
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="../static/images/slider_photos/slide_2_back.png" class="d-block w-100"
+                            alt="Programming" />
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Бэкенд</h3>
                             <p class="fs-5 fw-bold">
@@ -88,8 +93,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="7000">
-                        <img src="../static/images/slider_photos/slide_3_modelling.png" class="d-block w-100" alt="Modeling" />
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="../static/images/slider_photos/slide_3_modelling.png" class="d-block w-100"
+                            alt="Modeling" />
                         <div class="carousel-caption d-none d-md-block">
                             <h3>3д-моделирование</h3>
                             <p class="fs-5 fw-bold">
@@ -111,11 +117,13 @@
                 </button>
             </div>
         </section>
+
         <!-- Раздел "О себе" -->
+
         <section id="aboutMe" class="bg-gray">
             <div class="container p-3">
                 <div class="row justify-content-center">
-                    <div class="col-6">
+                    <div class="col-md-6, col-sm-12">
                         <hr />
                         <h3 class="text-center">
                             &laquo;А я, так просто, Назаров Дмитрий&raquo;
@@ -124,23 +132,24 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-8 my-3">
+                    <div class="col-md-8 col-sm-12 my-3">
                         <p class="text-center">
-                            Мне 22 года, я молодой, дружелюный сосед человек-гик. Любитель кино, сериалов и аниме.
-                            Увлекаюсь комиксами, иногда читаю книги жанра фантастики. Фанат гонок формулы 1 и начинающий
-                            шахматист.
+                            Мне 22 года, я молодой, дружелюбный сосед человек-гик. Любитель
+                            кино, сериалов и аниме. Увлекаюсь комиксами, иногда читаю книги
+                            жанра фантастики. Фанат гонок формулы 1 и начинающий шахматист.
                         </p>
-                        <br>
+                        <br />
                         <p class="text-center">
-                            Обладаю навыками системного администрирования. Стремлюсь стать востребованным разработчиком.
-                            Программирую на Python и JavaScript. Делаю различные проекты по веб-дизайну. Создаю 3д
-                            модели объектов и их визуализации. Сейчас работаю в компании КРОК стажёром программистом
-                            систем управления Crestron/Extron.
+                            Обладаю навыками системного администрирования. Стремлюсь стать
+                            востребованным разработчиком. Программирую на Python и
+                            JavaScript. Делаю различные проекты по веб-дизайну. Создаю 3д
+                            модели объектов и их визуализации. Сейчас работаю в компании
+                            КРОК стажёром по программированию систем управления Crestron/Extron.
                         </p>
                     </div>
                 </div>
                 <div class="row justify-content-center my-5">
-                    <div class="col-3">
+                    <div class="col-md-3 col-sm-12">
                         <div class="card text-center">
                             <img src="../static/images/cards_photos/vk_group.png" class="card-img-top"
                                 alt="vk_group_logo" />
@@ -156,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-3 col-sm-12">
                         <div class="card text-center">
                             <img src="../static/images/cards_photos/telegram.png" class="card-img-top"
                                 alt="telegram_logo" />
@@ -175,16 +184,20 @@
                 </div>
             </div>
         </section>
+
         <!-- Раздел "Навыки" -->
+
         <section id="skills">
             <div class="container p-3">
                 <div class="row justify-content-center">
                     <h3 class="text-center">Мои навыки</h3>
-                    <div class="col-8">
+                    <div class="col-md-8 col-sm-12">
                         <p class="text-center">
-                            Активно погружаюсь в сферу информационных технологий. Изучаю языки программирования для
-                            разработки логики программ. Знакомлюсь с версткой и созданием пользовательской стороны
-                            приложений. В качестве хобби пробую выполнять визуализации трёхмерных объектов.
+                            Активно погружаюсь в сферу информационных технологий. Изучаю
+                            языки программирования для разработки логики программ.
+                            Знакомлюсь с версткой и созданием пользовательской стороны
+                            приложений. В качестве хобби пробую выполнять визуализации
+                            трёхмерных объектов.
                         </p>
                     </div>
                 </div>
@@ -192,26 +205,29 @@
                     <div class="col-md-4 col-sm-12">
                         <h4>Бэкенд</h4>
                         <p>
-                            Изучаю языки программирования. Выполняю различные задачи.
-                            Могу разрабатывать клиент-серверные настольные/веб приложения. Умею строить SQL
-                            запросы. Могу работать в MySQL Workbench и PgAdmin для создания и управления схемами баз
-                            данных.
+                            Изучаю языки программирования. Выполняю различные задачи. Могу
+                            разрабатывать клиент-серверные настольные/веб приложения. Умею
+                            строить SQL запросы. Могу работать в MySQL Workbench и PgAdmin
+                            для создания и управления схемами баз данных.
                         </p>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <h4>Фронтенд</h4>
                         <p>
-                            Изучаю стек HTML/CSS/Vue.js технологий для веб-разработки. Занимаюсь проектированием и
-                            версткой простых интерфейсов. Умею работать в программе Figma для прототипирования страниц и
+                            Изучаю стек HTML/CSS/Vue.js технологий для веб-разработки.
+                            Занимаюсь проектированием и версткой простых интерфейсов. Умею
+                            работать в программе Figma для прототипирования страниц и
                             приложений. Могу использовать Bootstrap v4/5.
                         </p>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <h4>Моделирование</h4>
                         <p>
-                            Делаю 3д модели различных объектов. Умею работать с инструментами программы 3ds Max. Могу
-                            выполнять настройку рендеров Arnold, Corona. Изучаю high/low poly моделирование. Умею делать
-                            модели под сглаживание. Могу обрабатывать рендеры в Photoshop.
+                            Делаю 3д модели различных объектов. Умею работать с
+                            инструментами программы 3ds Max. Могу выполнять настройку
+                            рендеров Arnold, Corona. Изучаю high/low poly моделирование.
+                            Умею делать модели под сглаживание. Могу обрабатывать рендеры в
+                            Photoshop.
                         </p>
                     </div>
                 </div>
@@ -306,14 +322,15 @@
                         </div>
                     </div>
                 </div>
-                <hr>
+                <hr />
                 <div class="row justify-content-center mt-3">
                     <h3 class="text-center">Полученный опыт</h3>
-                    <div class="col-8">
+                    <div class="col-md-8 col-sm-12">
                         <p class="text-center">
-                            Первый рабочий опыт приобрел в лицее, когда сдал экзамен на сертификат "Управление ЭВМ".
-                            Научился работать с компьютерными программами обработки данных, а также начал
-                            программировать. Затем поступил в технический вуз, где стал развиваться в сфере
+                            Первый рабочий опыт приобрел в лицее, когда сдал экзамен на
+                            сертификат "Управление ЭВМ". Научился работать с компьютерными
+                            программами обработки данных, а также начал программировать.
+                            Затем поступил в технический вуз, где стал развиваться в сфере
                             информационных технологий.
                         </p>
                     </div>
@@ -321,7 +338,9 @@
                 <div class="row justify-content-center">
                     <div class="container">
                         <div class="main-timeline">
-                            <!-- start experience section-->
+
+                            <!-- начало секции опыта -->
+
                             <div class="timeline">
                                 <div class="icon"></div>
                                 <div class="date-content">
@@ -335,16 +354,20 @@
                                 <div class="timeline-content">
                                     <h5 class="title">Бакалавриат (Московский Политех)</h5>
                                     <p class="description">
-                                        Завершил обучение по направлению 09.03.03 - Прикладная информатика. Получил
-                                        навыки программирования на 1C, Python, JavaScript. Научился выполнять работы по
-                                        разработке корпоративных информационных систем. Познакомился с нормами
-                                        составления технической литераторы и документирования проектных решений.
+                                        Завершил обучение по направлению 09.03.03 - Прикладная
+                                        информатика. Получил навыки программирования на 1C,
+                                        Python, JavaScript. Научился выполнять работы по
+                                        разработке корпоративных информационных систем.
+                                        Познакомился с нормами составления технической литературы
+                                        и документирования проектных решений.
                                     </p>
                                 </div>
                             </div>
-                            <!-- end experience section-->
 
-                            <!-- start experience section-->
+                            <!-- конец секции опыта -->
+
+                            <!-- начало секции опыта -->
+
                             <div class="timeline">
                                 <div class="icon"></div>
                                 <div class="date-content">
@@ -358,15 +381,19 @@
                                 <div class="timeline-content">
                                     <h5 class="title">Школа 3д-моделирования (Knower)</h5>
                                     <p class="description">
-                                        Прошел два курса по основам 3д-моделирования. Научился работать в программе 3ds
-                                        Max 2019 для создания визуализаций объектов различной сложности. Познакомился с
-                                        подходами к созданию моделей, а также изучил работу рендеров Arnold и Corona.
+                                        Прошел два курса по основам 3д-моделирования. Научился
+                                        работать в программе 3ds Max 2019 для создания
+                                        визуализаций объектов различной сложности. Познакомился с
+                                        подходами к созданию моделей, а также изучил работу
+                                        рендеров Arnold и Corona.
                                     </p>
                                 </div>
                             </div>
-                            <!-- end experience section-->
 
-                            <!-- start experience section-->
+                            <!-- конец секции опыта -->
+
+                            <!-- начало секции опыта -->
+
                             <div class="timeline">
                                 <div class="icon"></div>
                                 <div class="date-content">
@@ -380,15 +407,19 @@
                                 <div class="timeline-content">
                                     <h5 class="title">Магистратура (Московский Политех)</h5>
                                     <p class="description">
-                                        Поступил на магистерское направление кафедры информационных технологий. Изучаю
-                                        компьютерную лингвистику и искусственный интеллект. Знакомлюсь с научными
-                                        работами в сфере машинного обучения и медицинских систем компьютерного зрения.
+                                        Поступил на магистерское направление кафедры
+                                        информационных технологий. Изучаю компьютерную лингвистику
+                                        и искусственный интеллект. Знакомлюсь с научными работами
+                                        в сфере машинного обучения и медицинских систем
+                                        компьютерного зрения.
                                     </p>
                                 </div>
                             </div>
-                            <!-- end experience section-->
 
-                            <!-- start experience section-->
+                            <!-- конец секции опыта -->
+
+                            <!-- начало секции опыта -->
+
                             <div class="timeline">
                                 <div class="icon"></div>
                                 <div class="date-content">
@@ -402,15 +433,18 @@
                                 <div class="timeline-content">
                                     <h5 class="title">КРОК</h5>
                                     <p class="description">
-                                        Прохожу стажировку в компании КРОК на должность программиста систем управления.
-                                        Изучаю работу и управление профессиональными аудио\видео системами.
-                                        Взаимодействую с программными продуктами Crestron и Extron для создания
-                                        пользовательских интерфейсов. Занимаюсь
-                                        программированием логики работы AV систем.
+                                        Прохожу стажировку в компании КРОК на должность
+                                        программиста систем управления. Изучаю работу и управление
+                                        профессиональными аудио\видео системами. Взаимодействую с
+                                        программными продуктами Crestron и Extron для создания
+                                        пользовательских интерфейсов. Занимаюсь программированием
+                                        логики работы AV систем.
                                     </p>
                                 </div>
                             </div>
-                            <!-- end experience section-->
+
+                            <!-- конец секции опыта -->
+
                         </div>
                     </div>
                 </div>
@@ -423,64 +457,69 @@
             <div class="container p-3">
                 <div class="row justify-content-center">
                     <h3 class="text-center">Портфолио</h3>
-                    <div class="col-8">
+                    <div class="col-md-8 col-sm-12">
                         <p class="text-center">
-                            Стремлюсь стать хорошим специалистом в сфере информационных технологий, поэтому постоянно
-                            развиваю свои компетенции. На данный момент работаю в должности стажёра, а также обучаюсь по
+                            Стремлюсь стать хорошим специалистом в сфере информационных
+                            технологий, поэтому постоянно развиваю свои компетенции. На
+                            данный момент работаю в должности стажёра, а также обучаюсь по
                             магистерской программе технического вуза.
                         </p>
                     </div>
                 </div>
-                <hr>
+                <hr />
+
+                <!-- Панель карточек с навигацией по разделам -->
+
                 <div class="row justify-content-center mt-3">
-                    <div class="col-12">
+                    <div class="col-md-12 col-sm-12">
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                    aria-selected="true">
+                                <button class="nav-link active" id="pills-achievements-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-achievements" type="button" role="tab"
+                                    aria-controls="pills-achievements" aria-selected="true">
                                     Личные достижения
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-profile" type="button" role="tab"
-                                    aria-controls="pills-profile" aria-selected="false">
+                                <button class="nav-link" id="pills-programming-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-programming" type="button" role="tab"
+                                    aria-controls="pills-programming" aria-selected="false">
                                     Программирование
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact" type="button" role="tab"
-                                    aria-controls="pills-contact" aria-selected="false">
+                                <button class="nav-link" id="pills-models-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-models" type="button" role="tab" aria-controls="pills-models"
+                                    aria-selected="false">
                                     Моделирование
                                 </button>
                             </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                aria-labelledby="pills-home-tab">
+                            <div class="tab-pane fade show active" id="pills-achievements" role="tabpanel"
+                                aria-labelledby="pills-achievements-tab">
                                 <div class="card mb-3 shadow">
                                     <div class="row g-0">
-                                        <div class="col-5">
+                                        <div class="col-md-5 col-sm-12">
                                             <img src="../static/images/cards_photos/certificate.png" class="img-fluid"
-                                                alt="info" />
+                                                alt="document" />
                                         </div>
-                                        <div class="col-7">
+                                        <div class="col-md-7 col-sm-12">
                                             <div class="card-body">
                                                 <h5 class="card-title">Сертификат "Оператор ЭВМ"</h5>
                                                 <p class="card-text">
                                                     Завершил обучение во Владимирском
                                                     промышленно-коммерческом лицее. Углубленно изучал
                                                     физику, математику и информатику. Успешно завершил
-                                                    дисциплины по программированию и работе с прикладным ПО.
-                                                    Получил навыки системного администрирования. Изучил
-                                                    базовые понятия в сфере 3д моделирования и обработки
-                                                    изображений с помощью редакторов.
+                                                    дисциплины по программированию и работе с прикладным
+                                                    ПО. Получил навыки системного администрирования.
+                                                    Изучил базовые понятия в сфере 3д моделирования и
+                                                    обработки изображений с помощью редакторов.
                                                 </p>
                                                 <p class="card-text">
                                                     <small class="text-muted">
-                                                        Сертификат получен
+                                                        <a href="https://drive.google.com/drive/folders/1AaLDDO58qtvYtz6txzqcVeVZ0fIfvbEj?usp=sharing" target="_blank"
+                                                            class="link-secondary">Подробнее...</a>
                                                     </small>
                                                 </p>
                                             </div>
@@ -489,11 +528,11 @@
                                 </div>
                                 <div class="card mb-3 shadow">
                                     <div class="row g-0">
-                                        <div class="col-5">
+                                        <div class="col-md-5 col-sm-12">
                                             <img src="../static/images/cards_photos/certificate.png" class="img-fluid"
-                                                alt="info"/>
+                                                alt="document" />
                                         </div>
-                                        <div class="col-7">
+                                        <div class="col-md-7 col-sm-12">
                                             <div class="card-body">
                                                 <h5 class="card-title">Диплом Бакалавра</h5>
                                                 <p class="card-text">
@@ -508,7 +547,52 @@
                                                 </p>
                                                 <p class="card-text">
                                                     <small class="text-muted">
-                                                        Диплом получен 06.07.2021
+                                                        <a href="https://drive.google.com/drive/folders/1AaLDDO58qtvYtz6txzqcVeVZ0fIfvbEj?usp=sharing" target="_blank"
+                                                            class="link-secondary">Подробнее...</a>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow">
+                                    <div class="row g-0">
+                                        <div class="col-md-5 col-sm-12">
+                                            <img src="../static/images/cards_photos/certificate.png" class="img-fluid"
+                                                alt="document" />
+                                        </div>
+                                        <div class="col-md-7 col-sm-12">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Сертификат Crestron P101</h5>
+                                                <p class="card-text">
+
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">
+                                                        <a href="https://drive.google.com/drive/folders/1AaLDDO58qtvYtz6txzqcVeVZ0fIfvbEj?usp=sharing" target="_blank"
+                                                            class="link-secondary">Подробнее...</a>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow">
+                                    <div class="row g-0">
+                                        <div class="col-md-5 col-sm-12">
+                                            <img src="../static/images/cards_photos/certificate.png" class="img-fluid"
+                                                alt="document" />
+                                        </div>
+                                        <div class="col-md-7 col-sm-12">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Сертификаты Extron</h5>
+                                                <p class="card-text">
+
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">
+                                                        <a href="https://drive.google.com/drive/folders/1AaLDDO58qtvYtz6txzqcVeVZ0fIfvbEj?usp=sharing" target="_blank"
+                                                            class="link-secondary">Подробнее...</a>
                                                     </small>
                                                 </p>
                                             </div>
@@ -516,15 +600,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                aria-labelledby="pills-profile-tab">
+                            <div class="tab-pane fade" id="pills-programming" role="tabpanel"
+                                aria-labelledby="pills-programming-tab">
                                 <div class="card mb-3 shadow">
                                     <div class="row g-0">
-                                        <div class="col-5">
+                                        <div class="col-md-5 col-sm-12">
                                             <img src="../static/images/cards_photos/vk_ms_bot.png" class="img-fluid"
-                                                alt="info" />
+                                                alt="vk_ms_bot" />
                                         </div>
-                                        <div class="col-7">
+                                        <div class="col-md-7 col-sm-12">
                                             <div class="card-body">
                                                 <h5 class="card-title">Бот Вконтакте</h5>
                                                 <p class="card-text">
@@ -534,7 +618,8 @@
                                                     или обычными пользователями социальной сети. Главной
                                                     задачей является подбор кино/сериалов/аниме по
                                                     заданным параметрам. Для получения информации о
-                                                    картинах бот взаимодействует с открытыми API баз данных кино.
+                                                    картинах бот взаимодействует с открытыми API баз
+                                                    данных кино.
                                                 </p>
                                                 <p class="card-text">
                                                     <small>
@@ -548,11 +633,11 @@
                                 </div>
                                 <div class="card mb-3 shadow">
                                     <div class="row g-0">
-                                        <div class="col-5">
+                                        <div class="col-md-5 col-sm-12">
                                             <img src="../static/images/cards_photos/vk_goals.png" class="img-fluid"
-                                                alt="info" />
+                                                alt="vk_goals" />
                                         </div>
-                                        <div class="col-7">
+                                        <div class="col-md-7 col-sm-12">
                                             <div class="card-body">
                                                 <h5 class="card-title">Мини-приложение Вконтакте</h5>
                                                 <p class="card-text">
@@ -577,11 +662,11 @@
                                 </div>
                                 <div class="card mb-3 shadow">
                                     <div class="row g-0">
-                                        <div class="col-5">
+                                        <div class="col-md-5 col-sm-12">
                                             <img src="../static/images/cards_photos/programming_challenge.png"
-                                                class="img-fluid" alt="info" />
+                                                class="img-fluid" alt="programming_challenge" />
                                         </div>
-                                        <div class="col-7">
+                                        <div class="col-md-7 col-sm-12">
                                             <div class="card-body">
                                                 <h5 class="card-title">Алгоритмы и задачи</h5>
                                                 <p class="card-text">
@@ -589,13 +674,15 @@
                                                     вёрстки. Репозиторий состоит из файлов-исходников,
                                                     содержащих код реализации задач, а также таблицы
                                                     отчётности. Вопросы программирования выбираю с
-                                                    <a href="https://leetcode.com/problemset/all/" target="_blank"
-                                                        class="link-secondary">Leetcode</a>, а затем решаю их на языке
+                                                    <b><a href="https://leetcode.com/problemset/all/" target="_blank"
+                                                            class="link-secondary">Leetcode</a></b>, а затем решаю их на
+                                                    языке
                                                     Python. Задачи вёрстки
                                                     состоят в формировании элементов/сайтов в
                                                     соответствии с условиями
-                                                    <a href="https://github.com/P1xt/speedrun-challenge" target="_blank"
-                                                        class="link-secondary">Speedrun Challange</a>
+                                                    <b><a href="https://github.com/P1xt/speedrun-challenge"
+                                                            target="_blank" class="link-secondary">Speedrun
+                                                            Challange</a></b>
                                                 </p>
                                                 <p class="card-text">
                                                     <small>
@@ -610,11 +697,11 @@
                                 </div>
                                 <div class="card mb-3 shadow">
                                     <div class="row g-0">
-                                        <div class="col-5">
+                                        <div class="col-md-5 col-sm-12">
                                             <img src="../static/images/cards_photos/4photos_1word.png" class="img-fluid"
-                                                alt="info" />
+                                                alt="android_4photos_1word" />
                                         </div>
-                                        <div class="col-7">
+                                        <div class="col-md-7 col-sm-12">
                                             <div class="card-body">
                                                 <h5 class="card-title">Приложение под андроид</h5>
                                                 <p class="card-text">
@@ -623,7 +710,8 @@
                                                     приложений. В качестве задачи стоит создание андроид
                                                     игры формата "4 фото - 1 слово". Приложение
                                                     разрабатывается по спроектированному ранее
-                                                    <a href="" class="link-secondary" target="_blank">концепту</a>.
+                                                    <b><a href="https://www.figma.com/proto/M5FhVNsYySpHxIkVd7uIXd/4photos1word?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.47&scaling=scale-down&starting-point-node-id=1%3A2"
+                                                            class="link-secondary" target="_blank">концепту</a></b>.
                                                 </p>
                                                 <p class="card-text">
                                                     <small>
@@ -636,29 +724,64 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                aria-labelledby="pills-contact-tab">
                                 <div class="card mb-3 shadow">
                                     <div class="row g-0">
-                                        <div class="col-6">
-                                            <img src="../static/images/cards_photos/custle.jpg" class="img-fluid"
-                                                alt="info" />
+                                        <div class="col-md-5 col-sm-12">
+                                            <img src="../static/images/cards_photos/library.png" class="img-fluid"
+                                                alt="web_library" />
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-7 col-sm-12">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    Электронная библиотека на Django
+                                                </h5>
+                                                <p class="card-text">
+                                                    Проект бесплатной электронной библиотеки. Книжный
+                                                    фонд пополняется путем добавления новых файлов в
+                                                    базу данных администратором или посетителями
+                                                    веб-страницы. Предполагается наличие удобной
+                                                    фильтрации, возможности к скачиванию книг в
+                                                    различных форматах, а также форма онлайн просмотра
+                                                    содержимого книги. Проект создается на Django с
+                                                    использованием в качестве базы данных PostgreSQL.
+                                                    Веб-интерфейс выполнен с использованием технологий
+                                                    HTML\CSS\Bootstrap.
+                                                </p>
+                                                <p class="card-text">
+                                                    <small>
+                                                        <a href="https://github.com/Advokat1/book_storage"
+                                                            target="_blank" class="link-secondary">Репозиторий проекта
+                                                            на GitHub</a>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-models" role="tabpanel"
+                                aria-labelledby="pills-models-tab">
+                                <div class="card mb-3 shadow">
+                                    <div class="row g-0">
+                                        <div class="col-md-6 col-sm-12">
+                                            <img src="../static/images/cards_photos/custle.jpg" class="img-fluid"
+                                                alt="custle" />
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
                                             <div class="card-body">
                                                 <h5 class="card-title">Замок</h5>
                                                 <p class="card-text">
-                                                    Мой первый полноценный проект. Использовал подход к построению "low
-                                                    poly" объекта, состоящего в основном из стандартных примитив. Путём
-                                                    работы с инструментами привязки производил перемещения деталей замка
-                                                    по плоскостям. Выполнял простые деформации инструментами работы с
-                                                    сеткой объектов.
+                                                    Мой первый полноценный проект. Использовал подход к
+                                                    построению "low poly" объекта, состоящего в основном
+                                                    из стандартных примитив. Путём работы с
+                                                    инструментами привязки производил перемещения
+                                                    деталей замка по плоскостям. Выполнял простые
+                                                    деформации инструментами работы с сеткой объектов.
                                                 </p>
                                                 <p class="card-text">
                                                     <small class="text-muted">
-                                                        <a href="" target="_blank" class="link-secondary">Проект на
-                                                            Behance</a>
+                                                        <a href="https://drive.google.com/drive/folders/1sc-7pO51KjrhvbhRkTY2M4H-qMI5nzZR?usp=sharing" target="_blank"
+                                                            class="link-secondary">Подробнее...</a>
                                                     </small>
                                                 </p>
                                             </div>
@@ -667,25 +790,27 @@
                                 </div>
                                 <div class="card mb-3 shadow">
                                     <div class="row g-0">
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-sm-12">
                                             <img src="../static/images/cards_photos/bender.jpg" class="img-fluid"
-                                                alt="info" />
+                                                alt="bender" />
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-sm-12">
                                             <div class="card-body">
                                                 <h5 class="card-title">Бендер</h5>
                                                 <p class="card-text">
-                                                    Модель робота из мультсериала "Футурама". Проект, для выполнения
-                                                    которого я изучил новые инструменты программы. Использовал подход
-                                                    создания студии с изображением объекта на плоскостях для более
-                                                    удобной отрисовки и подгонки каждой узловой точки каркаса. Применял
-                                                    инструменты вращения, добавления плоскости на отрисованную границу,
-                                                    искажение и сдавливания для создания наиболее похожей внешне модели.
+                                                    Модель робота из мультсериала "Футурама". Проект,
+                                                    для выполнения которого я изучил новые инструменты
+                                                    программы. Использовал подход создания студии с
+                                                    изображением объекта на плоскостях для более удобной
+                                                    отрисовки и подгонки каждой узловой точки каркаса.
+                                                    Применял инструменты вращения, добавления плоскости
+                                                    на отрисованную границу, искажение и сдавливания для
+                                                    создания наиболее похожей внешне модели.
                                                 </p>
                                                 <p class="card-text">
                                                     <small class="text-muted">
-                                                        <a href="" target="_blank" class="link-secondary">Проект на
-                                                            Behance</a>
+                                                        <a href="https://drive.google.com/drive/folders/1sc-7pO51KjrhvbhRkTY2M4H-qMI5nzZR?usp=sharing" target="_blank"
+                                                            class="link-secondary">Подробнее...</a>
                                                     </small>
                                                 </p>
                                             </div>
@@ -694,25 +819,27 @@
                                 </div>
                                 <div class="card mb-3 shadow">
                                     <div class="row g-0">
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-sm-12">
                                             <img src="../static/images/cards_photos/x_wing.jpg" class="img-fluid"
-                                                alt="info" />
+                                                alt="X-wing" />
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-sm-12">
                                             <div class="card-body">
                                                 <h5 class="card-title">X-wing</h5>
                                                 <p class="card-text">
-                                                    Выполнил построение модели космического корабля из вселенной фильмов
-                                                    "Звездные войны". Изучал инструменты работы с сеткой объекта.
-                                                    Исользовал различные деформации и изменение исходных примитив для
-                                                    достижения результата, наиболее похожего на оригинал. Применял
-                                                    функции объединения объектов, а также подключал сторонний инструмент
-                                                    для изменения сетки некоторых элементов окружения.
+                                                    Выполнил построение модели космического корабля из
+                                                    вселенной фильмов "Звездные войны". Изучал
+                                                    инструменты работы с сеткой объекта. Использовал
+                                                    различные деформации и изменение исходных примитив
+                                                    для достижения результата, наиболее похожего на
+                                                    оригинал. Применял функции объединения объектов, а
+                                                    также подключал сторонний инструмент для изменения
+                                                    сетки некоторых элементов окружения.
                                                 </p>
                                                 <p class="card-text">
                                                     <small class="text-muted">
-                                                        <a href="" target="_blank" class="link-secondary">Проект на
-                                                            Behance</a>
+                                                        <a href="https://drive.google.com/drive/folders/1sc-7pO51KjrhvbhRkTY2M4H-qMI5nzZR?usp=sharing" target="_blank"
+                                                            class="link-secondary">Подробнее...</a>
                                                     </small>
                                                 </p>
                                             </div>
@@ -721,24 +848,26 @@
                                 </div>
                                 <div class="card mb-3 shadow">
                                     <div class="row g-0">
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-sm-12">
                                             <img src="../static/images/cards_photos/robodog.jpg" class="img-fluid"
-                                                alt="info" />
+                                                alt="robodog" />
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-sm-12">
                                             <div class="card-body">
                                                 <h5 class="card-title">Робо-пёс</h5>
                                                 <p class="card-text">
-                                                    Первый крупный проект, в котором я использовал все ранее изученные
-                                                    техники и инструменты. Применял создание коробочной студии.
-                                                    Использовал работу с сеткой и другие функции изменения структуры
-                                                    объекта. Использовал инструменты создания освещения. Пользовался
-                                                    Corona Render для создания итогового рендера модели.
+                                                    Первый крупный проект, в котором я использовал все
+                                                    ранее изученные техники и инструменты. Применял
+                                                    создание коробочной студии. Использовал работу с
+                                                    сеткой и другие функции изменения структуры объекта.
+                                                    Использовал инструменты создания освещения.
+                                                    Пользовался Corona Render для создания итогового
+                                                    рендера модели.
                                                 </p>
                                                 <p class="card-text">
                                                     <small class="text-muted">
-                                                        <a href="" target="_blank" class="link-secondary">Проект на
-                                                            Behance</a>
+                                                        <a href="https://drive.google.com/drive/folders/1sc-7pO51KjrhvbhRkTY2M4H-qMI5nzZR?usp=sharing" target="_blank"
+                                                            class="link-secondary">Подробнее...</a>
                                                     </small>
                                                 </p>
                                             </div>
@@ -752,20 +881,30 @@
             </div>
         </section>
     </main>
+
     <!-- Футер -->
+
     <footer class="contact-footer text-center text-white" id="contactData">
         <div class="container p-4 pb-0">
             <section class="mb-4">
+
                 <!-- Telegram -->
+
                 <a class="btn btn-floating m-1 btn-circle" href="https://t.me/dm_naz" role="button" target="_blank"><img
                         src="../static/images/icons/telegram_icon.svg" alt="contact-telegram" /></a>
+
                 <!-- VK -->
+
                 <a class="btn btn-floating m-1 btn-circle" href="https://vk.com/dm_naz" role="button"
                     target="_blank"><img src="../static/images/icons/vk_icon.svg" alt="contact-vk" /></a>
+
                 <!-- GitHub -->
+
                 <a class="btn btn-floating m-1 btn-circle" href="https://github.com/Advokat1" role="button"
                     target="_blank"><img src="../static/images/icons/github_icon.svg" alt="github_icon" /></a>
+
                 <!-- Mail -->
+
                 <a class="btn btn-floating m-1 btn-circle" role="button" id="ShowEmailInfo"><img
                         src="../static/images/icons/mail_icon.svg" alt="contact-mail" /></a>
             </section>
@@ -774,8 +913,11 @@
             <p class="text-white">Created by Dmitry Nazarov</p>
         </div>
     </footer>
+
 </body>
-<!-- Email data notification -->
+
+<!-- Окно уведомлений для вывода почты и кнопки её сохранения в памяти -->
+
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
     <div id="EmailInfo" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true"
         data-bs-autohide="false">
@@ -802,6 +944,7 @@
         </div>
     </div>
 </div>
+
 <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script src="../resources/script.js"></script>
 
